@@ -34,6 +34,9 @@ char empresa;
 char transnueva[1];
 int otravez=1;
 int numero;
+int copia[8], prefijo, copianum;
+int limiterecarga = 1000;
+int i = 0;
 int acsii();
 int VerificacionPrefijos(int prefijoNumero);
 void iterador (void);
@@ -365,10 +368,7 @@ void iterador (void)
             switch (tecladecisiva)
             {
             case 49:
-                int numero, copia[8], prefijo, copianum, recarga;
-                int limiterecarga = 1000;
-                int i = 0;
-
+                
                 printf("\n\t\t\t\t* Recarga Electronica *\n");
                 printf("\n\t\tIngrese su numero telefonico: ");
                 scanf("%i", &numero);
